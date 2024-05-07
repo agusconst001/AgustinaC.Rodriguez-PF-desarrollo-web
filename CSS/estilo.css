@@ -1,0 +1,45 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: peru;
+    height: auto;
+    font-size: 25px;
+    padding: 25px;
+}
+
+.barra ul li{
+
+    list-style: none;
+    display: inline-block;
+    padding: 30px;
+}
+
+.barra a{
+    text-decoration: none;
+    color: white;
+}
+
+.barra a:hover{
+    color: cornsilk;
+    padding: 25px;
+
+}
+
+
+footer{
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 25px;
+}
