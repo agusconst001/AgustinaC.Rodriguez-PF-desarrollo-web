@@ -17,38 +17,37 @@
                 <li><a href="../Pages/productos.html">Productos</a></li>
                 <li><a href="../Pages/mayorista.html">Mayorista</a></li>
                 <li><a href="../Pages/preguntas_frecuentes.html">Preguntas frecuentes</a></li>
+                <li><a href="#"><form class="busqueda"><input type="search" placeholder="Buscar"></form></a></li>
             </ul>
         </nav>
     </header>
     <main>
         <H1>Mikasa calzados</H1>
-        <img src="../assets/zapatillas blancas.jpg" alt="portada zapatillas blancas">
+        <img class="portadaMayorista" src="../assets/zapatillas blancas.jpg" alt="portada zapatillas blancas">
         <h2>Mayorista</h2>
     </main>
-    <section>
-        <h3>LOCALES COMERCIALES</h3>
+    <section class="Mayorista">
+        <div>
+            <h3>LOCALES COMERCIALES</h3>
             <h4>REVENDEDORES</h4> 
             <div>A locales, tiendas y showrooms dedicados a la comercialización de calzados.</div>
             <ul>
-                <li>Mínimo 6 pares para envíos</li>
-                <li>Mínimo 3 pares para retiro en sucursal (CABA)</li>
+                <li>Mínimo 6 pares para envíos</li>        
+                <li>Mínimo 3 pares para retiro en sucursal (CABA)</li>    
                 <li>ENVÍOS A TODO EL PAÍS</li>
-            </ul>
+            </ul>            
+        </div>
     </section>
-    <!-- formulario-->
-    <section>
-        <form action="" method="post" enctype="application/x-www-form-urlencoded">
-            <h2>Contacto</h2>
-            Nommbre y apellido<input type="text" required > <br>
-            email<input type="email"> <br>
-            telefono<input type="text" required> <br>
-        <!--------Mensaje-------------------------------------------->
-            <textarea name="" id="" cols="30" rows="10" placeholder="escribe un mensaje"></textarea> <br>
-    
-        <!--botones en formularios---->
-            <input type="submit">
-            <input type="reset"><br>
-
+    <!-- ___________________formulario____________________-->
+    <section class="Mayorista">
+        <form class="formularioMayorista" action="">
+            <h3 class="tutilo_formulario">
+                ¡Contáctanos!
+            </h3>
+            Nombre y apellido: <input type="text" name="username" placeholder="Escriba su nombre aqui" class="inputFormulario" required><br>
+            Email: <input type="email" name="email" id="" placeholder="Escriba su email aqui" class="inputFormulario" required><br>
+            Mensaje: <input type="text" name="mensaje" class="inputFormulario" id="" placeholder="Escriba su mensaje aqui"  required><br>
+            <input type="submit" value="Enviar" class="botonEnviar">
         </form>
     </section>
     <footer>
