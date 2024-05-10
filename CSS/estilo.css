@@ -1,210 +1,254 @@
+@charset "UTF-8";
 /* -------------------  ----------------*/
-*{
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-    margin: 0px;
+* {
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+  margin: 0px;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
+
 /* ------- Barra de navegacion -------*/
-header{
-    background-color: peru;
-    height: auto;
-    font-size: 20px;
-    /*padding: 5px;*/  
+header {
+  /*background-color: peru;*/
+  height: auto;
+  font-size: 20px;
+  /*padding: 5px;*/
 }
-.barra ul li{
-    list-style: none; 
-    display: inline-flex; 
-    flex-direction: row;
-    padding: 5px;
-}
-.barra a{
-    text-decoration: none;
-    color: white;
-}
-.barra a:hover{
-    color: cornsilk;
 
+.barra ul li {
+  list-style: none;
+  display: inline-flex;
+  flex-direction: row;
+  padding: 5px;
+}
+
+.barra a {
+  text-decoration: none;
+  color: white;
+}
+
+.barra a:hover {
+  color: cornsilk;
 }
 
 /* ------------------------body ---------------------*/
-body{
-    background-color: moccasin;
+body {
+  background-color: moccasin;
 }
-.portadaZapatosMarrones{
-    width: 100%;
-    height: auto;
+
+.portadaZapatosMarrones {
+  width: 100%;
+  height: auto;
 }
-h1{
-    background-color: rgba(31, 24, 6, 0.556);
-    color: aliceblue;
-    padding: 5px;
+
+h1 {
+  background-color: rgba(31, 24, 6, 0.556);
+  color: aliceblue;
+  padding: 5px;
 }
-h2{
-    margin: 20px;
+
+h2 {
+  margin: 20px;
 }
-.presentacion{
-    /*border: 3px solid black;*/
-    position: relative;
-    margin: 30px;
+
+.presentacion {
+  /*border: 3px solid black;*/
+  position: relative;
+  margin: 30px;
 }
-#introduction{
+
+/*#introduction{
     padding: 50px;
     font-size: 25px;
     height: auto;
     width: 50%;
-    background-color: rgba(217, 159, 0, 0.508);
+    background-color: rgba(217, 159, 0, 0.508);/
     margin: 20px;
-    
-}
-.presentacionLogo{
+
+}*
+/*.presentacionLogo{
     position: absolute;
     bottom: 60pt;
     right: 100px;
     /*top: 1300px;
-    left: 950px;*/
+    left: 950px;
+}*/
+.logoM {
+  width: 60%;
+  height: auto;
+  padding: 10px;
+  margin: 10px;
 }
-.logoM{
-    width: 450px;
-    height: auto;
-    padding: 20px;
+
+p {
+  padding: 10px;
+  text-align: left;
 }
-p{
-    padding: 20px;
-}
+
 /*____________________Sobre nosotros-TESTIMONIOS_____________________*/
-.section_testimonios{
-    display: grid;
-    padding: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-template-rows: repeat(auto, 350px) ;
-    grid-auto-rows: 350px;
-    grid-auto-flow: row;
-    gap: 50px;
+.section_testimonios {
+  display: grid;
+  padding: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(auto, 350px);
+  grid-auto-rows: 350px;
+  grid-auto-flow: row;
+  gap: 50px;
 }
 
-.BEM_testimonios{
-    width: auto;
-    height: auto;
-    /*margin: 10px;*/
-    padding: 3px;
-    background-color: rgb(255, 231, 185);
-    text-align: center;
-    box-shadow: 0px 0px 30px #0006;
-    display: inline-block;
+.BEM_testimonios {
+  width: auto;
+  height: auto;
+  /*margin: 10px;*/
+  padding: 3px;
+  background-color: rgb(255, 231, 185);
+  text-align: center;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+  display: inline-block;
 }
 
-.testimonio_title{
-    margin: 5px;
-    padding: 20px;
+.testimonio_title {
+  margin: 5px;
+  padding: 10px;
 }
 
-.text_comentario{
-    width: 100%;
-    height: auto;
-    padding: 10px;
-    object-fit: cover;
+.text_comentario {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  object-fit: cover;
 }
+
 /*_____________PRODUCTOS_______________ */
-.ListaDeProductos{
-    /*justify-content: space-evenly;*/
-    display: grid;
-    /*height: 81vh;*/
-    padding: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) /*3, 1fr*/) /*3fr 3fr 3fr*/;
-    grid-template-rows: repeat(auto, 350px) /*350px 350px 350px*/;
-    grid-auto-rows: 350px;
-    grid-auto-flow: row;
-    /*grid-auto-columns: 1fr;
-    margin: auto;
-    margin-top: 30px;*/
-    gap: 50px; /*aca habia un margin*/
-}
-.BEM{
-    width: 100%;
-    height: 280px;
-    /*margin: 10px;*/
-    padding: 3px;
-    background-color: rgba(231, 195, 127, 0.871);
-    text-align: center;
-    box-shadow: 0px 0px 30px #0006;
-    display: inline-block;
+.ListaDeProductos {
+  /*justify-content: space-evenly;*/
+  display: grid;
+  /*height: 81vh;*/
+  padding: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(auto, 350px);
+  grid-auto-rows: 350px;
+  grid-auto-flow: row;
+  /*grid-auto-columns: 1fr;
+  margin: auto;
+  margin-top: 30px;*/
+  gap: 50px; /*aca habia un margin*/
 }
 
-.card__img{
-    /*background-color: darkgray;*/
-    width: auto;
-    height: 180px;
-    /*border: #111 solid;*/
-    position: relative;
+.BEM {
+  width: 100%;
+  height: 280px;
+  /*margin: 10px;*/
+  padding: 3px;
+  background-color: rgba(181, 169, 149, 0.871);
+  text-align: center;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+  display: inline-block;
+}
 
+.card__img {
+  width: auto;
+  height: 180px;
+  position: relative;
 }
-.card__title{
-    margin: 5px;
+
+.card__title {
+  margin: 5px;
 }
+
 /*prueba*/
 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Esto asegura que la imagen mantenga su proporción de aspecto dentro del div */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Esto asegura que la imagen mantenga su proporción de aspecto dentro del div */
 }
 
-.button__comprar{
-    padding: 10px;
-    background-color: #f1e1c0;
-    border: none;
-    box-shadow: 0px 0px 10px #0006;
-    border-radius: 10px;
+.button__comprar {
+  padding: 10px;
+  background-color: #f1e1c0;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
 }
-.button__comprar:hover{
-    background-color: bisque;
+
+.button__comprar:hover {
+  background-color: bisque;
 }
+
 /*______________MAYORISTA___________________*/
-.portadaMayorista{
-    width: 100%;
-    height: auto;
+.portadaMayorista {
+  width: 100%;
+  height: auto;
 }
 
-.Mayorista{ 
-    border: #111 solid;
-    padding: 25px;
-    margin: 15px;
+.Mayorista {
+  /*border: #111 solid;*/
+  padding: 25px;
+  margin: 15px;
 }
+
 /* ---------------------------- FORMULARIO ----------------*/
-.formularioMayorista{
-    background:rgba(255, 127, 80, 0.692);
-    padding: 20px;
-    margin: auto;
-    margin-bottom: 5%;
-    max-width: 600px;
-    height: auto;
-    box-shadow: 0px 0px 30px #0006;
+.listaMayorista .requisitos {
+  text-align: left;
 }
-.inputFormulario{
-    margin: 5px;
-    padding: 5px;
-    border: none;
+
+.formularioMayorista {
+  background: rgba(181, 169, 149, 0.871);
+  padding: 20px;
+  margin: auto;
+  margin-bottom: 5%;
+  max-width: 600px;
+  height: auto;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+  text-align: left;
 }
-.botonEnviar{
-    padding: 10px;
-    background-color: #e08626;
-    border: none;
-    box-shadow: 0px 0px 10px #0006;
-    border-radius: 10px;
+
+.inputFormulario {
+  margin: 5px;
+  padding: 5px;
+  border: none;
 }
+
+.botonEnviar {
+  padding: 10px;
+  background-color: #e08626;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
 /*_____________________PREGUNTAS FRECUENTES______________________*/
-.subtitulo_preguntas_frecuentes{
-    margin: 10px;
+.subtitulo_preguntas_frecuentes {
+  margin: 10px;
 }
+
+.img--PF1 {
+  width: 100%;
+  margin: 5px;
+}
+
+.img--PF2 {
+  width: 100%;
+  margin: 10px;
+}
+
+.img--PF3 {
+  width: 100%;
+  margin: 10px;
+}
+
 /* --------------pie de pagina -------------------*/
-footer{
-    background-color: #111;
-    color: #fff;
-    text-align: center;
-    padding: 15px;
-    font-size: 25px;
+footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 25px;
+  margin-top: 30px;
 }
+
+/*# sourceMappingURL=estilo.css.map */
